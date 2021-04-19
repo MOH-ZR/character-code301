@@ -23,15 +23,8 @@
                     <%= character.patronus %>
                 </p>
                 <p>
-                    <%= character.alive %>
+                    <%= character.is_alive %>
                 </p>
-                <form action="/favorite-character" method="post">
-                    <input type="hidden" name="name" value="<%= character.name %> ">
-                    <input type="hidden" name="house" value="<%= character.house %> ">
-                    <input type="hidden" name="patronus" value="<%= character.patronus %> ">
-                    <input type="hidden" name="alive" value="<%= character.alive %> ">
-                    <input type="submit" value="add">
-                </form>
             </section>
             <% }) %>
     </main>

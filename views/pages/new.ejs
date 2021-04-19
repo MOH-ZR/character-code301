@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../layout/head') %>
+</head>
+
+<body>
+    <header>
+        <%- include('../layout/header') %>
+    </header>
+
+    <main>
+        <form action="/character/create" method="post">
+            <input type="text" name="name">
+            <input type="text" name="house">
+            <input type="text" name="patronus">
+            <select name="alive">
+                <option value="t">alive</option>
+                <option value="f">dead</option>
+            </select>
+            <input type="submit" value="create">
+        </form>
+    </main>
+
+    <footer>
+        <%- include('../layout/footer') %>
+    </footer>
+</body>
+
+
+</html>
